@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
-
+import '../App.css';
 export default function Landing() {
     return (
         <div>
-            <h1>Hey, welcome</h1>
-
+            <h1>Authenticate yourself</h1>
+            
             <Link to="/todo">
-                <button className="btn">Go to Todo List</button>
+                <button className="authBtn">Go to Todo List</button>
             </Link>
         </div>
     );
