@@ -14,8 +14,10 @@ function Todo() {
   const [currentEdit,setCurrentEdit] = useState("");
   const [currentEditedItem,setCurrentEditedItem] = useState("");
   
+  // Creates new todo lists
   const handleAddTodo = ()=>{
     let newTodoItem = {
+      // useEffect(( =>{}))
       title: newTitle,
       description: newDescription,
     };
@@ -26,6 +28,7 @@ function Todo() {
     localStorage.setItem('todolist', JSON.stringify(updatedTodoArr));
   };
 
+  // Deletes todos
   const handleDeleteTodo = (index)=>{
     let reducedTodo = [...allTodos];
     reducedTodo.splice(index);
